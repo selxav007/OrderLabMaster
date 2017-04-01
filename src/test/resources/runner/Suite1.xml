@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testSuite1" parallel = "none"> 
+ 
+ <listeners>
+	<listener class-name="com.comcast.orderlab.utility.TestListener"/>
+</listeners>
+ 
+  <test name="LoginWithInValidPassword">
+    <classes>
+      <class name="com.comcast.orderlab.testSuite1.LoginWithInValidPassword"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="LoginWithInValidUserId">
+    <classes>
+      <class name="com.comcast.orderlab.testSuite1.LoginWithInValidUserId"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="LoginWithValidCredentials">
+    <classes>
+      <class name="com.comcast.orderlab.testSuite1.LoginWithValidCredentials"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
